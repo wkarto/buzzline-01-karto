@@ -1,3 +1,5 @@
+
+
 # buzzline-01-case
 
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
@@ -38,6 +40,7 @@ In VS Code, open a terminal.
 Use the commands below to activate .venv, and run the generator as a module. 
 To learn more about why we run our Python file as a module, see [PYTHON-PKG-IMPORTS](docs/PYTHON-PKG-IMPORTS.md) 
 
+**Original Producer**
 Windows PowerShell:
 
 ```shell
@@ -51,6 +54,22 @@ source .venv/bin/activate
 python3 -m producers.basic_producer_case
 ```
 
+**Custom Producer**
+Windows PowerShell:
+
+```shell
+.venv\Scripts\activate
+py -m producers.basic_producer_karto
+```
+
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m producers.basic_producer_karto
+```
+
+
+
 ## Task 4. Monitor an Active Log File (Terminal 2)
 
 A common streaming task is monitoring a log file as it is being written. 
@@ -59,6 +78,8 @@ This project has a consumer that reads and processes our own log file as log mes
 In VS Code, open a NEW terminal in your root project folder. 
 Use the commands below to activate .venv, and run the file as a module. 
 
+
+**Original Consumer**
 Windows:
 ```shell
 .venv\Scripts\activate
@@ -69,6 +90,19 @@ Mac/Linux:
 ```zsh
 source .venv/bin/activate
 python3 -m consumers.basic_consumer_case
+```
+
+**Custom Consumer**
+Windows:
+```shell
+.venv\Scripts\activate
+py -m consumers.basic_consumer_karto
+```
+
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m consumers.basic_consumer_karto
 ```
 
 ## Save Space
