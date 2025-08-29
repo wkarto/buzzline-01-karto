@@ -38,7 +38,7 @@ def main() -> None:
     """
     Producer entry point: continuously log delivery messages.
     """
-    logger.info("🚚 Producer started: generating delivery messages...")
+    logger.info("Producer started: generating delivery messages...")
     for msg in generate_messages():
         logger.info(msg)
 
